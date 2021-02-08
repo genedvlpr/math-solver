@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "989136629319",
+    "firebase_url": "https://math-solver-295416.firebaseio.com",
+    "project_id": "math-solver-295416",
+    "storage_bucket": "math-solver-295416.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989136629319:android:8661231572922c2b0d8b62",
+        "android_client_info": {
+          "package_name": "com.genedev.mathsolver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989136629319-d2gv9fn1oe008n6h465ifn41f4t55i4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4DJMZr8CdFMem3G9YsBRFYqC6u59pIaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989136629319-d2gv9fn1oe008n6h465ifn41f4t55i4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

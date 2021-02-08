@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cameraGestureTap="autoFocus"
+        app:cameraGestureLongTap="none"
+        app:cameraGesturePinch="zoom"
+        app:cameraGestureScrollHorizontal="exposureCorrection"
+        app:cameraGestureScrollVertical="exposureCorrection"
+        app:cameraEngine="camera2"
+        app:cameraPreview="glSurface"
+        app:cameraFacing="back"
+        app:cameraHdr="on"
+        app:cameraFlash="off"
+        app:cameraWhiteBalance="auto"
+        app:cameraMode="picture"
+        app:cameraPlaySounds="false"
+        app:cameraPictureSizeAspectRatio="1:8"
+        app:cameraPictureSizeMaxHeight="70"
+        app:cameraPictureSizeMaxWidth="300"
+        app:cameraPictureSizeMinHeight="70"
+        app:cameraPictureSizeMinWidth="300"
+        android:layout_centerInParent="true"
+        app:cameraAudio="off"
+        app:cameraAutoFocusMarker="@string/cameraview_default_autofocus_marker"
+        app:cameraUseDeviceOrientation="true"
+        app:cameraExperimental="false"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/cam_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bordered_cam_placeholder" />
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:cropGuidelines="on"
+        app:cropShape="rectangle"
+        app:cropAspectRatioY="1"
+        app:cropAspectRatioX="8"
+        app:cropMinCropWindowWidth="150dp"
+        app:cropMinCropWindowHeight="70dp"
+        app:cropMinCropResultHeightPX="70"
+        app:cropMinCropResultWidthPX="150"
+        app:cropGuidelinesColor="@color/white"
+        app:cropBorderCornerColor="@color/white"
+        app:cropBorderLineThickness="1dp"
+        app:cropBorderCornerThickness="5dp"
+        app:cropBorderLineColor="@color/white"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        android:text="Result"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@+id/controls"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_type"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:cropToPadding="true"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_keyboard_white_24dp"
+        android:tint="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <ImageButton
+            android:id="@+id/btn_select_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_toStartOf="@id/btn_capture"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_google_photos"
+            android:tint="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/btn_capture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/camera_button_background"
+            android:cropToPadding="true"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:tint="@color/colorPrimaryDark" />
+
+        <ImageButton
+            android:id="@+id/btn_flash"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/btn_capture"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_flash_off_black_24dp"
+            android:tint="@color/colorAccent" />
+    </RelativeLayout>
+
+</RelativeLayout>
