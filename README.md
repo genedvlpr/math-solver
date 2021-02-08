@@ -1,6 +1,8 @@
 # Math Solver
 Solving mathematical equations using Artificial Intelligence for Android
 
+<img src="https://drive.google.com/uc?export=view&id=1s_nCyA8mHNgpMMrWfWt9_Pt3oRoG1TUy" />
+
 # Integrations
 - Wolfram Alpha API
 
