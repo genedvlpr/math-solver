@@ -85,7 +85,7 @@ public class Home extends AppCompatActivity {
     private CameraView camera;
     private ImageButton btn_capture, btn_flash, btn_retry, btn_select_image, btn_type;
 
-    private static final String CLOUD_VISION_API_KEY = "AIzaSyAdRADdVHZIuWen0uS_Lw1FjnziemOes7g";
+    private static final String CLOUD_VISION_API_KEY = "[API_KEY]";
     private static final String ANDROID_CERT_HEADER = "X-Android-Cert";
     private static final String ANDROID_PACKAGE_HEADER = "X-Android-Package";
     public static final String TO_SOLUTIONS_LABEL = "Solutions";
