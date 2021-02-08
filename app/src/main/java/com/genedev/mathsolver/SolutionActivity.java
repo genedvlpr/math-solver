@@ -62,7 +62,7 @@ public class SolutionActivity extends AppCompatActivity implements RewardedVideo
             Log.e("RESULT", result);
         }
 
-        MobileAds.initialize(this, "ca-app-pub-3113729740390193~4962092615");
+        MobileAds.initialize(this, "[key]");
 
         // Use an activity context to get the rewarded video instance.
         mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
@@ -135,7 +135,7 @@ public class SolutionActivity extends AppCompatActivity implements RewardedVideo
         wolframTask.execute(urlString);
     }
     private void loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd("ca-app-pub-3113729740390193/5428996475",
+        mRewardedVideoAd.loadAd("[key]",
                 new AdRequest.Builder().build());
     }
     @Override
