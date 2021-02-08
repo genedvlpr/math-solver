@@ -5,5 +5,5 @@ package com.genedev.mathsolver.data;
  */
 
 public class APIKey {
-    public static final String ID = "7Q8V3G-A42YAEXQKH";
+    public static final String ID = "[API_KEY]";
 }
